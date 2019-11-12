@@ -214,6 +214,10 @@ h6 {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
+i {
+  align-items: center;
+}
+
 .callout {
   padding: 15rem 0;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-callout.jpg");
@@ -374,3 +378,34 @@ a:hover, a:focus, a:active {
   color: #333;
     text-shadow: 0px 1px 1px rgba(255,255,255,.3);
 }
+
+@media (max-width: 767px) {
+  .iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+  }
+}
+  @media (max-width: 767px) {
+    .iframe-container iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: center;
+     top: 0;
+     width: 100%;
+   }
+  }
+
+  /* 4x3 Aspect Ratio */
+  @media (max-width: 767px) {
+  .iframe-container-4x3 {
+    padding-top: 75%;
+  }
+}
+/* @media (max-width: 767px) {
+  iframe {
+    height: 200px;
+    width: 100%;
+  }
+} */

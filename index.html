@@ -36,10 +36,10 @@
         <a class="js-scroll-trigger" href="#page-top">Geoffrey Morse</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
+        <a class="js-scroll-trigger hide-resume" href="#page-top">Home</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#resume">Resume</a>
+        <a class="js-scroll-trigger resume-button" href="#resume">Resume</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -63,8 +63,8 @@
       <h3 class="mb-5 my-name">
         <em>Software Developer</em>
       </h3>
-<p><a class="btn btn-dark btn-xl js-scroll-trigger" href="#resume">Resume</a></p>
-
+<p><a class="btn btn-dark btn-xl js-scroll-trigger" href="./pdf/GeoffreyMorseFirstDraftResumePDF.pdf" target="_blank"><i class="fa fa-download"></i>Download Resume</a></p>
+<!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="./pdf/GeoffreyMorseFirstDraftResumePDF.pdf" target="_blank"><i class="fa fa-download"></i>Download Resume</a> -->
       <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
     </div>
     <div class="overlay"></div>
@@ -136,13 +136,13 @@
 
             <!-- <a href="https://unsplash.com/">Unsplash</a>! -->
           </p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Resume</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger resume-button" href="#resume">Resume</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="content-section" id="resume">
+  <section class="content-section resume" id="resume">
     <div class="container">
       <div class="content-section-heading text-center">
         <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
@@ -150,10 +150,12 @@
       </div>
       <div class="row no-gutters">
 
+        <!-- <div class="iframe-container"> -->
+          <!-- <iframe src="//www.youtube.com/embed/KMYrIi_Mt8A" allowfullscreen></iframe> -->
 
-            <iframe src="./pdf/GeoffreyMorseFirstDraftResumePDF.pdf" width="100%" height="500px">
+            <iframe src="./pdf/GeoffreyMorseFirstDraftResumePDF.pdf" width="100%" height="1200px">
             </iframe>
-
+      </div>
 
       </div>
     </div>
@@ -397,7 +399,7 @@
   </footer>
 
   <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+  <a class="scroll-to-top rounded js-scroll-trigger hide-resume" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
 
@@ -409,7 +411,7 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
+  <script src="js/stylish-portfolio.js"></script>
 
 </body>
 

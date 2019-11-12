@@ -1,5 +1,18 @@
 (function($) {
   "use strict"; // Start of use strict
+  // Hide resume section on page load
+  $(".resume").hide()
+  // Show resume section upon button click
+  $(".resume-button").click(function(e) {
+    e.preventDefault();
+    $(".resume").show()
+  })
+  // Hides resume section
+  $(".hide-resume").click(function(e) {
+    e.preventDefault();
+    $(".resume").hide()
+  })
+
 
   // Closes the sidebar menu
   $(".menu-toggle").click(function(e) {
