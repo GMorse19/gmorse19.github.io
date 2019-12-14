@@ -281,7 +281,7 @@
     <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
   </div>
 </div>
-<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 <script>
   const config = {
     type: 'carousel',
@@ -294,7 +294,7 @@
   }
   new Glide('.glide', config).mount()
 </script>
-
+ -->
 
 
 
@@ -546,6 +546,19 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.js"></script>
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <script>
+    const config = {
+      type: 'carousel',
+      perView: 3,
+      breakpoints: {
+        800: {
+          perView: 2
+        }
+      }
+    }
+    new Glide('.glide', config).mount()
+  </script>
 
 </body>
 
