@@ -21,6 +21,8 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 
 </head>
 
@@ -173,7 +175,7 @@
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- Skills -->
   <section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
       <div class="content-section-heading">
@@ -181,7 +183,127 @@
         <h2 class="mb-5">Skills</h2>
       </div>
 
-      <div class="row">
+  <!-- Glider -->
+      <div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+        <i class="devicon-react-original colored"></i>
+      </span>
+      <h4>
+        <strong>react</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+        <i class="devicon-javascript-plain"></i>
+      </span>
+      <h4>
+        <strong>JavaScript</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="devicon-rails-plain colored"></i>
+      </span>
+      <h4>
+        <strong>rails</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+        <i class="devicon-express-original colored"></i>
+      </span>
+      <h4>
+        <strong>Express</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+        <i class="devicon-nodejs-plain colored"></i>
+      </span>
+      <h4>
+        <strong>nodejs</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+        <i class="devicon-jquery-plain colored"></i>
+      </span>
+      <h4>
+        <strong>JQUERY</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+        <i class="devicon-postgresql-plain colored"></i>
+      </span>
+      <h4>
+        <strong>postgresql</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+        <i class="devicon-github-plain colored"></i>
+      </span>
+      <h4>
+        <strong>GitHub</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="devicon-mongodb-plain colored"></i>
+      </span>
+      <h4>
+        <strong>mongoDB</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+        <i class="devicon-html5-plain colored"></i>
+      </span>
+      <h4>
+        <strong>HTML</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+        <i class="devicon-bootstrap-plain colored"></i>
+      </span>
+      <h4>
+        <strong>Bootstrap</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="devicon-ruby-plain colored"></i>
+      </span>
+      <h4>
+        <strong>Ruby</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+        <i class="devicon-sass-original"></i>
+      </span>
+      <h4>
+        <strong>Sass</strong>
+      </h4></li>
+      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
+        <i class="devicon-atom-original colored"></i>
+      </span>
+      <h4>
+        <strong>Atom</strong>
+      </h4></li>
+    </ul>
+  </div>
+  <div class="glide__arrows" data-glide-el="controls">
+    <!-- <div class="left glide__arrow glide__arrow--left" data-glide-dir="<"></div> -->
+    <!-- <div class="right glide__arrow glide__arrow--right" data-glide-dir=">"></div> -->
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+  </div>
+</div>
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script>
+  const config = {
+    type: 'carousel',
+    perView: 3,
+    breakpoints: {
+      800: {
+        perView: 2
+      }
+    }
+  }
+  new Glide('.glide', config).mount()
+</script>
+
+
+
+
+      <!-- <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Skills</h3>
+        <h2 class="mb-5">Skills</h2>
+      </div> -->
+
+      <!-- <div class="row">
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="devicon-nodejs-plain colored"></i>
@@ -190,9 +312,9 @@
             <strong>nodejs</strong>
           </h4>
           <p class="text-faded mb-0"></p>
-        </div>
+        </div> -->
 
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="devicon-postgresql-plain colored"></i>
           </span>
@@ -200,9 +322,9 @@
             <strong>postgresql</strong>
           </h4>
           <p class="text-faded mb-0"></p>
-        </div>
+        </div> -->
 
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="devicon-react-original colored"></i>
           </span>
@@ -210,9 +332,9 @@
             <strong>react</strong>
           </h4>
           <p class="text-faded mb-0"></p>
-        </div>
+        </div> -->
 
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
               <i class="devicon-rails-plain colored"></i>
           </span>
@@ -221,10 +343,10 @@
           </h4>
           <p class="text-faded mb-0"></p>
         </div>
-      </div>
+      </div> -->
 
-          <div class="row">
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <!-- <div class="row"> -->
+            <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
               <span class="service-icon rounded-circle mx-auto mb-3">
                 <i class="devicon-express-original colored"></i>
               </span>
@@ -232,9 +354,9 @@
                 <strong>Express</strong>
               </h4>
               <p class="text-faded mb-0"></p>
-            </div>
+            </div> -->
 
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
               <span class="service-icon rounded-circle mx-auto mb-3">
                 <i class="devicon-github-plain colored"></i>
               </span>
@@ -242,9 +364,9 @@
                 <strong>GitHub</strong>
               </h4>
               <p class="text-faded mb-0"></p>
-            </div>
+            </div> -->
 
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
               <span class="service-icon rounded-circle mx-auto mb-3">
                 <i class="devicon-jquery-plain colored"></i>
               </span>
@@ -252,9 +374,9 @@
                 <strong>JQUERY</strong>
               </h4>
               <p class="text-faded mb-0"></p>
-            </div>
+            </div> -->
 
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
               <span class="service-icon rounded-circle mx-auto mb-3">
                   <i class="devicon-mongodb-plain colored"></i>
               </span>
@@ -263,9 +385,9 @@
               </h4>
               <p class="text-faded mb-0"></p>
             </div>
-          </div>
+          </div> -->
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
         <span class="service-icon rounded-circle mx-auto mb-3">
           <i class="devicon-sass-original"></i>
@@ -274,10 +396,10 @@
           <strong>Sass</strong>
         </h4>
         <p class="text-faded mb-0"></p>
-      </div>
+      </div> -->
 
 
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+      <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
         <span class="service-icon rounded-circle mx-auto mb-3">
           <i class="devicon-atom-original colored"></i>
         </span>
@@ -285,9 +407,9 @@
           <strong>Atom</strong>
         </h4>
         <p class="text-faded mb-0"></p>
-      </div>
+      </div> -->
 
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+      <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
         <span class="service-icon rounded-circle mx-auto mb-3">
           <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
         </span>
@@ -295,9 +417,9 @@
           <strong>AWS</strong>
         </h4>
         <p class="text-faded mb-0"></p>
-      </div>
+      </div> -->
 
-      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+      <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
         <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="devicon-ruby-plain colored"></i>
         </span>
@@ -306,9 +428,9 @@
         </h4>
         <p class="text-faded mb-0"></p>
       </div>
-    </div>
+    </div> -->
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="devicon-javascript-plain"></i>
@@ -317,8 +439,8 @@
             <strong>JavaScript</strong>
           </h4>
           <p class="text-faded mb-0"></p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        </div> -->
+        <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="devicon-html5-plain colored"></i>
           </span>
@@ -326,9 +448,9 @@
             <strong>HTML</strong>
           </h4>
           <p class="text-faded mb-0"></p>
-        </div>
+        </div> -->
 
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+        <!-- <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="devicon-css3-plain colored"></i>
           </span>
@@ -336,9 +458,9 @@
             <strong>CSS</strong>
           </h4>
           <p class="text-faded mb-0"></p>
-        </div>
+        </div> -->
 
-        <div class="col-lg-3 col-md-6">
+        <!-- <div class="col-lg-3 col-md-6">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="devicon-bootstrap-plain colored"></i>
           </span>
@@ -346,10 +468,10 @@
             <strong>Bootstrap</strong>
           </h4>
           <p class="text-faded mb-0"></p>
-        </div>
+        </div> -->
 
-      </div>
     </div>
+    <!-- </div> -->
   </section>
 
   <!-- Callout -->

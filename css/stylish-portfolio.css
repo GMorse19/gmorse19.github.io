@@ -43,6 +43,28 @@ h5,
 h6 {
   font-weight: 700;
 }
+/* arrows */
+.left,
+.right {
+  width: 100px;
+  height: 100px;
+  transition: .5s;
+  float: left;
+  box-shadow: -2px 2px 0 rgba(255,255,255,.5);
+  cursor: pointer;
+}
+.left {
+  transform: rotate(45deg);
+}
+.right {
+  transform: rotate(225deg);
+}
+.left:hover,
+.right:hover {
+  box-shadow: -2px 2px 0 rgba(255,255,255,1);
+}
+
+
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
