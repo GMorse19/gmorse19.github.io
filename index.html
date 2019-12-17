@@ -21,8 +21,10 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.css" rel="stylesheet">
-  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+  <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+  <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="glider.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
 
 </head>
 
@@ -98,7 +100,7 @@
             <span class="caption">
               <span class="caption-content">
                 <h2>Quip Pro Code</h2>
-                <p class="mb-0">A full stack project built with JavaScript and Ruby on Rails</p>
+                <p class="mb-0">A full stack SPA built with JavaScript and Ruby on Rails</p>
               </span>
             </span>
             <img class="img-fluid" src="img/QuipProCode.png" alt="Quip Pro Code">
@@ -183,118 +185,7 @@
         <!-- <h2 class="mb-5">Skills</h2> -->
       <!-- </div> -->
 
-  <!-- Glider -->
-      <!-- <div class="glide">
-  <div class="glide__track" data-glide-el="track">
-    <ul class="glide__slides">
 
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-        <i class="devicon-react-original colored"></i>
-      </span>
-      <h4>
-        <strong>react</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-        <i class="devicon-javascript-plain"></i>
-      </span>
-      <h4>
-        <strong>JavaScript</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-          <i class="devicon-rails-plain colored"></i>
-      </span>
-      <h4>
-        <strong>rails</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-        <i class="devicon-express-original colored"></i>
-      </span>
-      <h4>
-        <strong>Express</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-        <i class="devicon-nodejs-plain colored"></i>
-      </span>
-      <h4>
-        <strong>nodejs</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-        <i class="devicon-jquery-plain colored"></i>
-      </span>
-      <h4>
-        <strong>JQUERY</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-        <i class="devicon-postgresql-plain colored"></i>
-      </span>
-      <h4>
-        <strong>postgresql</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-        <i class="devicon-github-plain colored"></i>
-      </span>
-      <h4>
-        <strong>GitHub</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-          <i class="devicon-mongodb-plain colored"></i>
-      </span>
-      <h4>
-        <strong>mongoDB</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-        <i class="devicon-html5-plain colored"></i>
-      </span>
-      <h4>
-        <strong>HTML</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-        <i class="devicon-bootstrap-plain colored"></i>
-      </span>
-      <h4>
-        <strong>Bootstrap</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-          <i class="devicon-ruby-plain colored"></i>
-      </span>
-      <h4>
-        <strong>Ruby</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-        <i class="devicon-sass-original"></i>
-      </span>
-      <h4>
-        <strong>Sass</strong>
-      </h4></li>
-      <li class="glide__slide"><span class="service-icon rounded-circle mx-auto mb-3">
-        <i class="devicon-atom-original colored"></i>
-      </span>
-      <h4>
-        <strong>Atom</strong>
-      </h4></li>
-    </ul>
-  </div>
-  <div class="glide__arrows" data-glide-el="controls">
-    <!-- <div class="left glide__arrow glide__arrow--left" data-glide-dir="<"></div> -->
-    <!-- <div class="right glide__arrow glide__arrow--right" data-glide-dir=">"></div> -->
-    <!-- <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-  </div>
-</div> -->
-<!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-<script>
-  const config = {
-    type: 'carousel',
-    perView: 3,
-    breakpoints: {
-      800: {
-        perView: 2
-      }
-    }
-  }
-  new Glide('.glide', config).mount()
-</script>
- -->
 
 
 
@@ -303,7 +194,70 @@
         <h2 class="mb-5">Skills</h2>
       </div>
 
-      <div class="row">
+<!-- glider.js -->
+
+<div class="glider-contain">
+  <div class="glider">
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-javascript-plain colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-react-original-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-rails-plain-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-nodejs-plain-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-mongodb-plain-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-jquery-plain-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-express-original-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-bootstrap-plain-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-github-plain-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-ruby-plain-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-postgresql-plain-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-html5-plain-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-heroku-original-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-css3-plain-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-atom-original-wordmark colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-mocha-plain colored"></i>
+    </span></div>
+    <div><span class="service-icon rounded-circle mx-auto mb-3">
+      <i class="devicon-sass-original colored"></i>
+    </span></div>
+  </div>
+
+  <button role="button" aria-label="Previous" class="glider-prev"><p class="arrow">«</p></button>
+  <button role="button" aria-label="Next" class="glider-next"><p class="arrow">»</p></button>
+  <div role="tablist" class="dots"></div>
+</div>
+
+
+      <!-- <div class="row">
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="devicon-nodejs-plain colored"></i>
@@ -470,7 +424,7 @@
           <p class="text-faded mb-0"></p>
         </div>
 
-    </div>
+    </div> -->
     </div>
   </section>
 
@@ -560,7 +514,20 @@
     }
     new Glide('.glide', config).mount()
   </script> -->
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<script>
 
+new Glider(document.querySelector('.glider'), {
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  draggable: true,
+  dots: '.dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
+</script>
 </body>
 
 </html>
