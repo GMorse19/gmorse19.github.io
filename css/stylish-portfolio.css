@@ -123,7 +123,7 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/folio-bg.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/carp-bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -409,6 +409,14 @@ a:hover, a:focus, a:active {
 .my-name {
   color: #333;
     text-shadow: 0px 1px 1px rgba(255,255,255,.3);
+}
+
+.bg-image-carp {
+  height: 30vh;
+  background-image: url('../img/CarpenterBrackets.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right 20px bottom 0px;
 }
 
 @media (max-width: 767px) {
