@@ -416,9 +416,13 @@ a:hover, a:focus, a:active {
   width: 65%;
   border-radius: 5px;
 } */
+.strokeme {
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 .title-box {
   /* background-color: rgba(102, 68, 0, .9) ; */
-  background: url('../img/oak board.jpg');
+  /* background: url('../img/oak board.jpg'); */
   /* background-size: 700px 300px; */
   margin: auto;
   width: 65%;
